@@ -36,14 +36,14 @@ Learn how this repo works below!
 Our application is wrapped in the `ThirdwebProvider` component. Allowing us to use all of the React SDK's functionality such as connect and disconnect wallets.
 
 ```jsx
-import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 import Head from "next/head";
 import ThirdwebGuideFooter from "../components/guide/ThirdwebGuideFooter";
 import Header from "../components/Header";
 import "../styles/globals.css";
 
-// This is the chainId your dApp will work on.
-const activeChainId = ChainId.Mumbai;
+// This is the chain your dApp will work on.
+const activeChain = "mumbai";
 
 function MyApp({ Component, pageProps }) {
   return (
